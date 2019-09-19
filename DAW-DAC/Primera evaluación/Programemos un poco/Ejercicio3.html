@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio3</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            var r = prompt("Introduce la hora actual:");
+
+            var n = prompt("Introduce un número entero de horas:");
+
+            if(r.substring(0,r.indexOf(":")) >= 0 && r.substring(0,r.indexOf(":")) < 24){
+
+                var s = 0;
+
+                s = parseInt(r.substring(0,r.indexOf(":")));
+
+                s = s + parseInt(n);
+                
+                document.write("Dentro de "+parseInt(n)+" horas marcará el reloj la hora: "+s+":"+r.substring(r.indexOf(":")+1,r.length));
+                
+            }
+        </script>
+    </body>
+</html>

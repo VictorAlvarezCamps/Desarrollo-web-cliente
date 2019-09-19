@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio2</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var Notas = new Array();
+
+            var t = 0;
+
+            var t = prompt("Cuántas notas son en total?");
+
+            var r = 0;
+
+            for(i=0;i<t;i++){
+                Notas.push(prompt("Introduce nota: "));
+            }
+
+            for(i=0;i<Notas.length;i++){
+                console.log(Notas[i]);
+                r = r + parseInt(Notas[i]);
+            }
+
+            r = r / Notas.length;
+
+            document.write("El promedio de estas notas es: "+r);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio7</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            var TodosLosTramos = new Array();
+
+            var tramos = prompt("¿Cuántos tramos han sido en total?");
+
+            var i = 0;
+
+            var cont = 1;
+
+            var diferenciaTiempo = 0;
+
+            var sumaTiempo = 0;
+
+            var h = 0;
+
+            var m = 0;
+
+            var entro = Boolean(false);
+
+            while(i<parseInt(tramos)){
+                TodosLosTramos.push(prompt("Introduce tramo "+cont));
+                i++;
+                cont++;
+            }
+
+            var cont2 = 0;
+
+            while(cont2<TodosLosTramos.length){
+
+                sumaTiempo += parseInt(TodosLosTramos[cont2]);
+
+                if(sumaTiempo>=60){
+
+                    entro = true;
+
+                    diferenciaTiempo = sumaTiempo - 60;
+
+                    if(diferenciaTiempo = 60 && (entro = true)){
+
+                        console.log("sumo 1 hora!!!");
+
+                        h += 1;
+                        entro = false;
+
+                    }                                         
+
+                }
+
+                cont2++;                
+
+            }
+
+            if(sumaTiempo>=60){
+
+                document.write("En total ha sido: "+h.toString()+ " horas y "+diferenciaTiempo.toString()+" minutos ");        
+
+            }else if(sumaTiempo<60){
+
+                document.write("En total ha sido: "+h.toString()+ " horas y "+m.toString()+" minutos ");
+
+            }
+
+        </script>
+    </body>
+</html>

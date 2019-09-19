@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio4</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var n = prompt("Introduce un número con decimal");
+
+            var nStr = n.toString();
+
+            var r = "";
+
+            if(nStr.includes(",")){
+
+                r = nStr.substring(nStr.indexOf(",")+1,nStr.length);
+                document.write("La parte decimal es: "+r);
+
+            }else{
+
+                document.write("No tiene decimales");
+                
+            }
+
+        </script>
+    </body>
+</html>

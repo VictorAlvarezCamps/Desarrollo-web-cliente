@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio6</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            var l1 = prompt("Introduce lado 1 del triángulo");
+
+            var l2 = prompt("Introduce lado 2 del triángulo");
+
+            var l3 = prompt("Introduce lado 3 del triángulo");
+
+            if(l1 == l2 && l2 == l3 && l1 == l3){
+                document.write("El triángulo es equilatero");
+            }else if(l1 == l2 || l2 == l3 || l1 != l3){
+                document.write("El triángulo es isosceles");
+            }else if(l1 != l2 && l2 != l3){
+                document.write("El triángulo es escaleno");
+            }
+
+
+        </script>
+    </body>
+</html>

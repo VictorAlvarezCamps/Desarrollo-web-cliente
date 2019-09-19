@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 1</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            var resp = prompt("Introduce una fecha:");
+
+            function DateONo(resp){
+
+                if(resp.indexOf("-").){
+
+                    document.write("1");
+
+                    return true;
+                }
+
+            }
+
+            if(DateONo(resp) == true){
+                document.write("Es un objeto Date");
+            }else{
+                document.write("No es un objeto Date");
+            }
+            
+        </script>
+    </body>
+</html>

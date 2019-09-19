@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 2</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+/*
+            function NumeroFeliz(v){
+
+                var repetido = new Array();
+
+                while(v>1 && !~repetido.indexOf(v)){
+
+                    var r = 0;
+
+                    repetido.push(v);               
+                    
+                    for(j=0;j<v.toString().split("");j++){                    
+
+                        r += Math.pow(j,2);
+                        
+                    }
+
+                    v = r ;
+
+                }
+
+                return v == 1;
+
+            }                    
+            
+            var NumFeliz = new Array();
+
+            for(i=1;i<20;i++){                
+
+                if(NumeroFeliz(i)){
+                    
+                    NumFeliz.push(i);
+
+                    document.write(i+ ",");
+
+                }
+            }
+
+
+*/
+
+
+
+/*
+                function feliz(numero) {
+                    felices = new Array();
+                    felices[0] = 1;
+
+                    actual = 2;
+
+                    numero = 0;
+
+                    while (felices.length <= 5) {
+                        
+                        numero = actual / 10;
+                        decimales = actual / 10;
+
+                        if ( numero > 0) {
+                            cuadrado = numero**2;
+                        } else {
+                            cuadrado = 
+                        }
+
+                    }
+
+                }
+
+*/
+
+
+               
+                mierda = 0;
+                contador = 1;
+                while (mierda < 5) {
+                    if (feliz(contador)) {
+                        console.warn(contador + " es feliz");
+                        mierda++;    
+                    } else {
+                        console.error(contador + " es infeliz");
+                    }
+                    contador++;
+                }
+
+
+                function feliz(num) {
+
+                    var n;
+                    vistos = new Array();
+
+                    cont = 0;
+
+
+
+
+                    while (num != 1 && vistos[num] != true && cont < 200) {
+                        
+                        //console.log("******* " + num + " - " + vistos[num]);
+                        vistos[num] = true;
+                        acum = 0;
+                        while (num > 0) {
+
+                            //Nos quedamos con el número de más a la derecha
+                            n = num % 10;
+
+                            //calculamos su cuadrado;
+                            acum = acum + n**2;
+
+                            //Nos cargamos el número que acabamos de calcular
+                            num = (num - n)/10;
+
+                        }
+                        
+                        //guardamos la suma de los cuadradosº
+                        num = acum;
+                        cont++;
+                    }
+
+                    return (num == 1);
+                }
+
+
+                
+            
+        </script>
+    </body>
+</html>

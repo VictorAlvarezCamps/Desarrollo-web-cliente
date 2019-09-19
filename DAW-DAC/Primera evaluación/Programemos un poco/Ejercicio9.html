@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio9</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var p = prompt("Escribe una palabra para saber si es palíndroma");
+
+            function EsPalindroma(p){
+
+                for(i=0;i<p.length;i++){
+                    if(p[i]!=p[p.length-i-1]){
+                        return false;
+                    }else{
+                        return true;
+                    }
+                }
+
+            }
+
+            if(EsPalindroma(p) ==false){
+                document.write("No es palíndroma");
+            }else{
+                document.write("Es palíndroma")
+            }
+
+        </script>
+    </body>
+</html>

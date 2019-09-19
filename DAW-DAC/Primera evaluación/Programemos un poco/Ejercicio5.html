@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio5</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+            var n = new Array();
+
+            for(i=0;i<4;i++){
+                n.push(prompt("Introduce un número: "));
+            }
+
+            n.sort(function(a,b){
+                return a-b;
+            });
+
+            document.write("Números ordenados de menor a mayor: ");
+
+            for(i=0;i<n.length;i++){
+                
+                document.write(n[i]+", ");
+            }
+
+        </script>
+    </body>
+</html>
